@@ -1,0 +1,14 @@
+<div class="account-settings-container">
+  <div class="container">
+    <div class="row">
+    <h2>TEST Products</h2>
+      {{#each model.products as |prod|}}
+        <ul>
+          <li>{{prod.title}}</li>
+        </ul>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+{{outlet}}
